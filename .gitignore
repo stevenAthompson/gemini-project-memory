@@ -6,3 +6,5 @@ project_memory.db
 test_project_memory.db
 artifacts/
 coverage/
+demo_project_memory.db
+test-dist/

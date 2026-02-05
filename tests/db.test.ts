@@ -1,4 +1,4 @@
-import { ProjectDatabase } from '../src/db';
+import { ProjectDatabase } from '../src/db.js';
 import fs from 'fs';
 
 const TEST_DB_PATH = 'test_project_memory.db';
