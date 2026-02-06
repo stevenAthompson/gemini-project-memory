@@ -2,14 +2,16 @@
 
 A SQLite-backed project management extension for the Gemini CLI.
 
-This extension replaces manual Markdown logging with a structured database approach, allowing you to manage project phases, plans, logs, lessons learned, and inventory programmatically. It automatically maintains a `project_memory.db` file in your project root and can "render" this data back into human-readable Markdown reports.
+This extension allows Gemini (or you) to manage project phases, plans, logs, "lessons learned", and script inventory by storing it all in a sql lite database that lives in the root of your project folder. It automatically maintains the `project_memory.db` file and can "render" this data back into human-readable Markdown reports when requested. You can do that with comands, or gemini can do it when asked.
+
+The best feature (to me) is that it gives Gemini CLI long term memory that it can search with either wildcards or regex! Stop letting it repeat mistakes from the past by telling it to save it's lessons learned to the database, and to query those lessons when it's stuck! All you have to do is install this, and add some instructions to your GEMINI.md. 
 
 ## Installation
 
-1.  Clone this repository.
-2.  Run `npm install` to install dependencies.
-3.  Run `npm run build` to compile.
-4.  Ensure `gemini-extension.json` is properly configured.
+1.  gemini extension install https://github.com/stevenAthompson/gemini-project-memory
+2.  gemini extension update --all
+3.  start gemini cli
+4.  /extensions restart --all
 
 ## Features
 
@@ -26,4 +28,6 @@ This extension replaces manual Markdown logging with a structured database appro
 
 ## Usage
 
-See `GEMINI.md` for the detailed list of available tools and their parameters.
+The agent can read the included `GEMINI.md` automatically for the detailed list of available tools and their parameters.
+
+If you want to force Gemini CLI to use it you can add instructions to your projects GEMINI.md telling it to save it's lessons learned with the tool after each phase, and to reference them whenever it's struggling. 
