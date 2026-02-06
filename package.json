@@ -1,6 +1,6 @@
 {
   "name": "gemini-project-memory",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A SQLite tool to document ongoing Gemini projects.",
   "author": "",
   "license": "MIT",
