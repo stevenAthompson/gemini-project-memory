@@ -408,7 +408,7 @@ export class ProjectDatabase {
                 `# Search Results`,
                 '',
                 `**Query:** \`${searchQuery}\` (${stype})`,
-                `**Date:** ${new Date().toISOString()}`,
+                `**Date:** ${new Date().toLocaleString()}`,
                 '',
                 '## Matches',
                 results.length > 0 ? results.map(r => `- ${r}`).join('\n') : '_No matches found._'
